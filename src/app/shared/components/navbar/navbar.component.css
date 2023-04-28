@@ -1,0 +1,48 @@
+/* *,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+} */
+
+.contenedorNavbar {
+  height: 70px;
+  width: 100%;
+  /* background-color: black; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: black;
+}
+
+.navbar__logo img {
+  height: 60px;
+  width: auto;
+}
+
+.navbar__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__logo2 img {
+  height: 60px;
+  width: auto;
+}
+
+input {
+  height: 30px;
+  width: 60%;
+  border: none;
+  border-radius: 20px;
+  padding: 0 15px;
+}
+
+.ContenedorDegradado{
+  height: 60px;
+  background: linear-gradient(black,rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.349), #252c39);
+}
+
