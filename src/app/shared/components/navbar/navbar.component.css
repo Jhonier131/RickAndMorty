@@ -1,24 +1,16 @@
-/* *,
-*:after,
-*:before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-
-} */
 
 .contenedorNavbar {
-  height: 70px;
+  height: auto;
   width: 100%;
   /* background-color: black; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: black;
+  padding-top: 20px;
 }
 
 .navbar__logo img {
-  height: 60px;
+  height: 90px;
   width: auto;
 }
 
@@ -28,13 +20,8 @@
   align-items: center;
 }
 
-.navbar__logo2 img {
-  height: 60px;
-  width: auto;
-}
-
 input {
-  height: 30px;
+  height: 40px;
   width: 60%;
   border: none;
   border-radius: 20px;

@@ -2,9 +2,14 @@
     <div class="contenedor__personajes">
         <div class="personajes__card" *ngFor="let data of infoGeneral.results">
             <img src="{{data.image}}">
-            <h2>{{data.name}}</h2>
-            <p>{{data.species}}</p>
-            <p>{{data.gender}}</p>
+            <h3>{{data.name}}</h3>
+            <div class="personajes__icon">
+                <p [ngClass]="data.species === 'Human' ? 'iconHuman': 'iconAlien'">{{data.species}}</p>
+            </div>
+            <div class="personajes__icon">
+                <p [ngClass]="data.gender === 'Male' ? 'iconMale':
+                              data.gender === 'Female' ? 'iconFemale' : 'iconUnknown'">{{data.gender}}</p>
+            </div>
             <span></span>
         </div>
     </div>

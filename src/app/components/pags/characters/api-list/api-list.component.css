@@ -3,6 +3,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  padding-bottom: 70px;
 }
 
 
@@ -14,7 +15,7 @@
   }
   
   .personajes__card {
-    height: 260px;
+    height: 280px;
     width: 280px;
     margin-top: 80px;
     border-radius: 40px;
@@ -24,18 +25,80 @@
   }
   
   .personajes__card img {
-    height: 225px;
+    height: 220px;
     width: 200px;
     border-radius: 20px;
     transform: translateY(-50%);
   }
 
-  h2 {
-    transform: translateY(-100px);
-    margin: 0 10px;
+  h3 {
+    transform: translateY(-105px);
+    width: 80%;
+    margin: 0 auto;
   }
 
-  p {
+  .personajes__icon {
     transform: translateY(-100px);
     padding: 10px;
+  }
+
+  .personajes__icon p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iconHuman::before{
+    content: '';
+    background-image: url(../../../../../assets/img/human.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:30px;
+    width:30px;
+    display: inline-block;
+    filter: invert(1);
+  }
+
+  .iconAlien::before{
+    content: '';
+    background-image: url(../../../../../assets/img/alien.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:30px;
+    width:30px;
+    display: inline-block;
+    filter: invert(1);
+  }
+
+  .iconMale::before{
+    content: '';
+    background-image: url(../../../../../assets/img/genero-masculino.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:30px;
+    width:30px;
+    display: inline-block;
+    filter: invert(1);
+  }
+
+  .iconFemale::before{
+    content: '';
+    background-image: url(../../../../../assets/img/simbolo-femenino.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:30px;
+    width:30px;
+    display: inline-block;
+    filter: invert(1);
+  }
+
+  .iconUnknown::before{
+    content: '';
+    background-image: url(../../../../../assets/img/signo-de-interrogacion.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:30px;
+    width:30px;
+    display: inline-block;
+    filter: invert(1);
   }
