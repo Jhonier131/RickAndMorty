@@ -1,1 +1,11 @@
-<p>api-list works!</p>
+<div class="personajes">
+    <div class="contenedor__personajes">
+        <div class="personajes__card" *ngFor="let data of infoGeneral.results">
+            <img src="{{data.image}}">
+            <h2>{{data.name}}</h2>
+            <p>{{data.species}}</p>
+            <p>{{data.gender}}</p>
+            <span></span>
+        </div>
+    </div>
+</div>

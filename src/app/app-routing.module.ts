@@ -15,8 +15,8 @@ const routes: Routes = [
   {
     path: 'personajes',
     loadChildren: () =>
-      import('./components/pags/characters/api-list/api-list.module').then(
-        (m) => m.ApiListModule
+      import('./components/pags/characters/characters.module').then(
+        (m) => m.CharactersModule 
       ),
   },
 ];

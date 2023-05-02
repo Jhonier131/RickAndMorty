@@ -1,7 +1,8 @@
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ApiListComponent } from './api-list.component';
+import { ApiListComponent } from './api-list/api-list.component';
 
 const routes: Routes = [{ path: '', component: ApiListComponent }];
 

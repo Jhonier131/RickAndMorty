@@ -1,0 +1,41 @@
+.personajes {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+.contenedor__personajes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 80px;
+    grid-row-gap: 80px;
+  }
+  
+  .personajes__card {
+    height: 260px;
+    width: 280px;
+    margin-top: 80px;
+    border-radius: 40px;
+    background-color: #000000a2;
+    text-align: center;
+    color: white;
+  }
+  
+  .personajes__card img {
+    height: 225px;
+    width: 200px;
+    border-radius: 20px;
+    transform: translateY(-50%);
+  }
+
+  h2 {
+    transform: translateY(-100px);
+    margin: 0 10px;
+  }
+
+  p {
+    transform: translateY(-100px);
+    padding: 10px;
+  }
