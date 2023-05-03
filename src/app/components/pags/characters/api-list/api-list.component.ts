@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BehaviorSubject, of} from 'rxjs';
 import { tap } from 'rxjs/Operators';
 import { InfoGeneral } from 'src/app/shared/services/personajes.interface';
 import { PersonajesService } from 'src/app/shared/services/personajes.service';
@@ -9,7 +10,10 @@ import { PersonajesService } from 'src/app/shared/services/personajes.service';
   styleUrls: ['./api-list.component.css'],
 })
 export class ApiListComponent implements OnInit {
+
   public infoGeneral: InfoGeneral;
+  private pags = 1;
+
 
   constructor(private personajes: PersonajesService) {}
 
@@ -24,7 +28,6 @@ export class ApiListComponent implements OnInit {
       .subscribe({
         next: (data: InfoGeneral) => {
           this.infoGeneral = data;
-          console.log('info ' , this.infoGeneral.results)
         },
       });
   }

@@ -6,99 +6,135 @@
   padding-bottom: 70px;
 }
 
-
 .contenedor__personajes {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 80px;
-    grid-row-gap: 80px;
-  }
-  
-  .personajes__card {
-    height: 280px;
-    width: 280px;
-    margin-top: 80px;
-    border-radius: 40px;
-    background-color: #000000a2;
-    text-align: center;
-    color: white;
-  }
-  
-  .personajes__card img {
-    height: 220px;
-    width: 200px;
-    border-radius: 20px;
-    transform: translateY(-50%);
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 80px;
+  grid-row-gap: 95px;
+}
 
-  h3 {
-    transform: translateY(-105px);
-    width: 80%;
-    margin: 0 auto;
-  }
+.personajes__card {
+  height: 280px;
+  width: 280px;
+  margin-top: 80px;
+  border-radius: 40px;
+  background-color: #000000a2;
+  text-align: center;
+  color: white;
+  -webkit-box-shadow: 0px 25px 23px -3px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 0px 25px 23px -3px rgba(0, 0, 0, 0.78);
+  box-shadow: 0px 25px 23px -3px rgba(0, 0, 0, 0.78);
+  transition: all 0.3s;
+}
 
-  .personajes__icon {
-    transform: translateY(-100px);
-    padding: 10px;
-  }
+.card__contenedor {
+  transition: all 0.4s;
+}
 
-  .personajes__icon p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.personajes__card:hover {
+  transform: translateY(-10%);
+  background-color: #000000d7;
+  color: #97ce4c;
+}
 
-  .iconHuman::before{
-    content: '';
-    background-image: url(../../../../../assets/img/human.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height:30px;
-    width:30px;
-    display: inline-block;
-    filter: invert(1);
-  }
 
-  .iconAlien::before{
-    content: '';
-    background-image: url(../../../../../assets/img/alien.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height:30px;
-    width:30px;
-    display: inline-block;
-    filter: invert(1);
-  }
 
-  .iconMale::before{
-    content: '';
-    background-image: url(../../../../../assets/img/genero-masculino.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height:30px;
-    width:30px;
-    display: inline-block;
-    filter: invert(1);
-  }
+.personajes__card img {
+  height: 220px;
+  width: 200px;
+  border-radius: 20px;
+  transform: translateY(-50%);
+  -webkit-box-shadow: 0px 25px 23px -3px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 0px 25px 23px -3px rgba(0, 0, 0, 0.78);
+  box-shadow: 0px 25px 23px -3px rgba(0, 0, 0, 0.78);
+  transition: all 0.4s;
+}
 
-  .iconFemale::before{
-    content: '';
-    background-image: url(../../../../../assets/img/simbolo-femenino.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height:30px;
-    width:30px;
-    display: inline-block;
-    filter: invert(1);
-  }
+.card__contenedor:hover img {
+  height: 240px;
+  width: 230px;
+}
 
-  .iconUnknown::before{
-    content: '';
-    background-image: url(../../../../../assets/img/signo-de-interrogacion.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height:30px;
-    width:30px;
-    display: inline-block;
-    filter: invert(1);
-  }
+.card__contenedor:hover {
+  transform: translateY(-2%);
+}
+
+h2 {
+  transform: translateY(-105px);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.personajes__icon {
+  transform: translateY(-100px);
+  padding: 5px;
+}
+
+.personajes__icon h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px
+}
+
+.iconHuman::before {
+  content: "";
+  background-image: url(../../../../../assets/img/human.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  filter: invert(1);
+  padding-right: 30px;
+}
+
+.iconAlien::before {
+  content: "";
+  background-image: url(../../../../../assets/img/alien.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  filter: invert(1);
+  padding-right: 30px;
+}
+
+.iconMale::before {
+  content: "";
+  background-image: url(../../../../../assets/img/genero-masculino.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  filter: invert(1);
+  padding-right: 30px;
+}
+
+.iconFemale::before {
+  content: "";
+  background-image: url(../../../../../assets/img/simbolo-femenino.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  filter: invert(1);
+  padding-right: 30px;
+}
+
+.iconUnknown::before {
+  content: "";
+  background-image: url(../../../../../assets/img/signo-de-interrogacion.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  filter: invert(1);
+  padding-right: 30px;
+}
+
+

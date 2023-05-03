@@ -1,20 +1,3 @@
-// export interface Personaje {
-//   id: number;
-//   nombre: string;
-//   imagen: string;
-//   estatus: string;
-//   especies: Especies;
-//   genero: string;
-//   creado: string;
-//   origen: string;
-// }
-
-// type tipo  = 'Human'| 'alien';
-// export interface Especies {
-//   id: number;
-//   nombre: tipo;
-// }
-
 
 export interface InfoGeneral {
   info:    Info;
