@@ -11,8 +11,9 @@
           <h4 [ngClass]="data.gender === 'Male' ? 'iconMale':
                         data.gender === 'Female' ? 'iconFemale' : 'iconUnknown'">{{data.gender}}</h4>
         </div>
-        <button>Up</button>
       </div>
     </div>
   </div>
+  <a class="btn-flotante prev" (click)="prevPage()"><img src="../../../../../assets/img/flecha-correcta.png"></a>
+  <a class="btn-flotante next" (click)="nextPage()"><img src="../../../../../assets/img/flecha-correcta.png"></a>
 </div>

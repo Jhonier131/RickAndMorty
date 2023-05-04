@@ -31,4 +31,25 @@ export class ApiListComponent implements OnInit {
         },
       });
   }
+
+  nextPage(){
+    if (this.infoGeneral.info.next !== null){
+      this.personajes.cambiarPagina(this.infoGeneral.info.next).subscribe({
+        next: (data) => {
+          this.infoGeneral = data;
+          console.log(data, 'la dataaaaa')
+        }
+      })
+    }
+  }
+
+  prevPage(){
+    if (this.infoGeneral.info.prev !== null){
+      this.personajes.cambiarPagina(this.infoGeneral.info.prev).subscribe({
+        next: (data) => {
+          this.infoGeneral = data;
+        }
+      })
+    }
+  }
 }
