@@ -1,0 +1,36 @@
+* {
+    height: 200px;
+    width: 100%;
+    background-color: black;
+}
+
+.footer {
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer__contacto {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 0;
+}
+
+.footer__contacto a {
+    color: white;
+}
+
+.footer__redes {
+    display: flex;
+    justify-content: start;
+    text-align: center;
+}
+
+.footer__redes a img {
+    height: 50px;
+    width: 50px;
+    margin: 0 30px ;
+}
