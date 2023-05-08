@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
+
 import { ApiListComponent } from './api-list/api-list.component';
 import { CharacterCardComponent } from './character-card/character-card.component';
+import { ApiListRoutingModule } from './characters-routing.module';
 
 @NgModule({
   declarations: [
@@ -12,10 +14,12 @@ import { CharacterCardComponent } from './character-card/character-card.componen
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    ApiListRoutingModule
   ],
   exports: [
-    ApiListComponent
+    ApiListComponent,
+    CharacterCardComponent,
   ]
 })
 export class CharactersModule { }

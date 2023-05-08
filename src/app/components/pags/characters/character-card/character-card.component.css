@@ -1,0 +1,63 @@
+.contenedor__personaje {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 6%;
+  /* height: 100vh; */
+  overflow-y: hidden;
+}
+
+.cardPersonaje {
+  height: 550px;
+  width: 650px;
+  margin: 0 auto;
+  padding-top: 150px;
+  border-radius: 40px;
+  background-color: #000000e8;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  -webkit-box-shadow: 0px 25px 23px -3px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 0px 25px 23px -3px rgba(0, 0, 0, 0.78);
+  box-shadow: 0px 25px 23px -3px rgba(0, 0, 0, 0.78);
+}
+
+.cardPersonaje img {
+  height: 350px;
+  width: 320px;
+  /* overflow: auto !important; */
+  border-radius: 20px;
+  transform: translateY(-50%);
+  -webkit-box-shadow: 0px 25px 23px -3px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 0px 25px 23px -3px rgba(0, 0, 0, 0.78);
+  box-shadow: 0px 25px 23px -3px rgba(0, 0, 0, 0.78);
+}
+
+.cardPersonaje_detalle1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cardPersonaje_detalle2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cardPersonaje__informacion {
+  transform: translateY(-150px);
+  padding-bottom: 200px;
+}
+
+.cardPersonaje__informacion h1 {
+  color: #97ce4c;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.cardPersonaje__informacion h2 {
+  color: #97ce4c;
+  font-size: 30px;
+  /* font-weight: bold; */
+}

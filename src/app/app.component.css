@@ -7,3 +7,7 @@
     background-size: cover;
     background-color: #252C39;
 }
+
+.contenedor {
+    height: 100vh;
+}

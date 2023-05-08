@@ -26,6 +26,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
     InfiniteScrollModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [FooterComponent]
 })
 export class AppModule { }

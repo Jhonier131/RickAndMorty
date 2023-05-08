@@ -4,13 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'inicio',
+    redirectTo: 'personajes',
     pathMatch: 'full'
-  },
-  {
-    path: 'inicio',
-    loadChildren: () =>
-      import('./components/pags/home/home.module').then((m) => m.HomeModule),
   },
   {
     path: 'personajes',
