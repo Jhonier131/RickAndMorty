@@ -8,7 +8,7 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+// import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { FooterComponent } from './shared/components/footer/footer.component';
 
 @NgModule({
@@ -23,7 +23,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    InfiniteScrollModule
+    // InfiniteScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent],

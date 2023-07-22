@@ -28,6 +28,8 @@ export class ApiListComponent implements OnInit {
       .subscribe({
         next: (data: InfoGeneral) => {
           this.infoGeneral = data;
+          console.log('this.infoGeneral');
+          console.log(this.infoGeneral);
         },
       });
   }

@@ -5,8 +5,9 @@
   <div class="navbar__logo">
     <img src="../../../../assets/img/logo.png" />
   </div>
-  <form class="navbar__logo">
-    <input type="search">
+  <form class="navbar__logo" >
+    <input type="search" formControlName="buscador" (keyUp)="barraBusqueda($event.value)">
   </form>
 </div>
+<!-- <pre>{{formulario.getRawValue() | json}}</pre> -->
 <div class="ContenedorDegradado"></div>

@@ -23,5 +23,11 @@ export class PersonajesService {
     return this.http.get<any>(pag)
   }
 
+  filtrarPersonaje(nombrePersonaje: string): Observable<InfoGeneral> {
+    const nombre = `?name=${nombrePersonaje}`;
+    const filtro = `${environment.apiUrl}`;
+    return this.http.get<InfoGeneral>(`${filtro}/${nombre}`);
+  }
+
 
 }
