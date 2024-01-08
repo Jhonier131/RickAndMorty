@@ -200,3 +200,12 @@ h2 {
     grid-template-columns: 1fr
   }
 }
+@media (max-width: 550px) {
+  .next {
+    right: 10px;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+}

@@ -1,13 +1,24 @@
 
 *{
-    background: url('../assets/img/fondo.png') no-repeat center center fixed;
+    /* background: url('../assets/img/fondo.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    background-color: #252C39;
+    background-size: cover; */
+    /* background-color: #252C39; */
+}
+
+.img_background {
+    position: fixed;
+    display: flex;
+    /* background-color: antiquewhite; */
+    height: 100vh;
+    width: 100%;
+    margin-top: -75px;
+    z-index: 1;
 }
 
 .contenedor {
+    background: #252C39;
     height: 100vh;
 }

@@ -1,17 +1,19 @@
 * {
-    height: 200px;
-    width: 100%;
-    background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
 .footer {
-    width: 60%;
+    background-color: black;
+    height: 200px;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .footer__contacto {
+    width: 50%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -24,13 +26,14 @@
 }
 
 .footer__redes {
+    width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     text-align: center;
+    color: red;
 }
 
 .footer__redes a img {
     height: 50px;
     width: 50px;
-    margin: 0 30px ;
 }
