@@ -184,6 +184,28 @@ h2 {
   filter: invert(0);
 }
 
+.scroll-container {
+  position: relative;
+  right: -100px;
+}
+
+.scroll-container:before {
+  content: '';
+  display: block;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.scroll-container a {
+  position: sticky;
+  background-color: #97ce4c;
+  padding: 0.5rem;
+  border-radius: 10px;
+  top: 88vh;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 @media (max-width: 1440px) {
   .contenedor__personajes {
     grid-template-columns: repeat(3, 1fr);

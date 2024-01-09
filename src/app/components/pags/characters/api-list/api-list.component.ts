@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject, of} from 'rxjs';
 import { tap } from 'rxjs/Operators';
+import { ObservableService } from 'src/app/shared/services/observable.service';
 import { InfoGeneral } from 'src/app/shared/services/personajes.interface';
 import { PersonajesService } from 'src/app/shared/services/personajes.service';
 
@@ -15,10 +16,13 @@ export class ApiListComponent implements OnInit {
   private pags = 1;
 
 
-  constructor(private personajes: PersonajesService) {}
+  constructor(private personajes: PersonajesService, private dataService: ObservableService) {}
 
   ngOnInit(): void {
     this.getPersonajesServices();
+    this.dataService.obtenerObservable().subscribe((nuevoValor) => {
+      this.infoGeneral = nuevoValor;
+    });
   }
 
   private getPersonajesServices(): void {
